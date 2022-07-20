@@ -8,23 +8,31 @@ body{
     background-color: hsl(30, 38%, 92%);
 }
 .flex-container{
-    display: flex;
-border-radius: 10px;
-   padding:0;
-   margin: 3rem 23rem;
-   background-color: white;
-   .flex-item img{
-    width: 15rem;
+    display: grid;
+    border-radius: 10px;
+    background-color: white;
+    grid-template-columns: repeat(2,19rem );
+    margin: 3rem auto;
+    width: fit-content;
+    
+   .flex-item  .img{
+    
+    width: 18rem;
+    border-radius: 5px;
+   
    }
+   
    .flex-item{
+   
   .perview{
-    margin: .3rem;
+   margin: 1rem;
   }
     .title{
+        padding: 1rem;
         font-weight: 700;
         font-family: 'Fraunces', serif;
         font-size: 2rem;
-        margin: .3rem;
+        
     }
     .detail{
         font-weight: 700;
@@ -47,7 +55,7 @@ border-radius: 10px;
     .button{
         border: 1px solid hsl(158, 36%, 37%);
         border-radius: 5px;
-        margin:3rem 1rem 0rem 1rem;
+        margin:3rem 1rem 0rem 1rem ;
         text-align: center;
         color: white;
         font-weight: 700;
@@ -55,4 +63,26 @@ border-radius: 10px;
         padding: .5rem 0 ;
     }
    }
+}
+@media screen and (max-width:1440px) {
+    .flex-item img{
+        width: 18rem;
+    } 
+}
+@media screen and (max-width:600px) {
+    .flex-container{
+       display: grid ;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(2,18rem 5rem);
+       width: fit-content;
+       margin: 3rem auto;
+    }
+    .flex-item img{
+        width: 25rem;
+    }
+    .flex-item{
+        width: 25rem;
+    }
+    
+    
 }

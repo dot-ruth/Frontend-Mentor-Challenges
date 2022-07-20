@@ -10,23 +10,27 @@ body {
 }
 
 .flex-container {
-  display: flex;
+  display: grid;
   border-radius: 10px;
-  padding: 0;
-  margin: 3rem 23rem;
   background-color: white;
+  grid-template-columns: repeat(2, 19rem);
+  margin: 3rem auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-.flex-container .flex-item img {
-  width: 15rem;
+.flex-container .flex-item .img {
+  width: 18rem;
+  border-radius: 5px;
 }
 .flex-container .flex-item .perview {
-  margin: 0.3rem;
+  margin: 1rem;
 }
 .flex-container .flex-item .title {
+  padding: 1rem;
   font-weight: 700;
   font-family: "Fraunces", serif;
   font-size: 2rem;
-  margin: 0.3rem;
 }
 .flex-container .flex-item .detail {
   font-weight: 700;
@@ -51,4 +55,27 @@ body {
   font-weight: 700;
   background-color: hsl(158deg, 36%, 37%);
   padding: 0.5rem 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .flex-item img {
+    width: 18rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .flex-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 18rem 5rem);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 3rem auto;
+  }
+  .flex-item img {
+    width: 25rem;
+  }
+  .flex-item {
+    width: 25rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

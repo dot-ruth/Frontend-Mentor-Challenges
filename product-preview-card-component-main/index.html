@@ -23,7 +23,12 @@
   <div class="flex-container">
 
     <div class="flex-item">
-      <img src="images/image-product-desktop.jpg" alt="">
+      <picture>
+        <source media="(max-width:600px)" srcset="images/image-product-mobile.jpg">
+        <source media="(max-width:1440px)" srcset="">
+        <img src="images/image-product-desktop.jpg" alt="">
+      </picture>
+     
     </div>
     <div class="flex-item">
   <div class="perview">
