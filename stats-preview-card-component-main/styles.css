@@ -14,9 +14,6 @@ body {
   display: grid;
   border-radius: 10px;
   grid-template-columns: repeat(2, 25rem);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   width: 50rem;
   margin: 4rem auto;
 }
@@ -63,4 +60,26 @@ body {
 .container .right .flex-container .flex-item .value {
   font-size: 20px;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 20rem;
+    margin: 3rem auto;
+    background-color: hsl(244deg, 38%, 16%);
+  }
+  .container .left .pic {
+    border-radius: 10px 10px 0px 0px;
+    width: 20rem;
+  }
+  .container .left .pic-color {
+    width: 20rem;
+    height: 235px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .container .right {
+    margin: 1rem 1rem 2rem 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

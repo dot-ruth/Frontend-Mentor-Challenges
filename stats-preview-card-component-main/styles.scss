@@ -12,7 +12,6 @@ body{
     display: grid;
     border-radius: 10px;
     grid-template-columns: repeat(2,25rem);
-    width: fit-content;
     width: 50rem;
     margin: 4rem auto;
     .left{
@@ -62,3 +61,4 @@ body{
         }
     }
 }
+@import 'media';
