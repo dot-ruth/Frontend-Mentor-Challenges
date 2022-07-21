@@ -100,4 +100,19 @@ body {
   position: absolute;
   top: 2rem;
   right: -1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .big-con {
+    width: 18rem;
+    flex-direction: column;
+  }
+  .big-con .rate1, .big-con .rate2, .big-con .rate3 {
+    width: 16px;
+    position: relative;
+  }
+  .reviews {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=styles.css.map */
