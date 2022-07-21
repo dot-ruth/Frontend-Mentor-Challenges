@@ -82,4 +82,15 @@ body {
   .container .right {
     margin: 1rem 1rem 2rem 1rem;
   }
+  .container .right .title {
+    text-align: center;
+  }
+  .container .right .detail {
+    text-align: center;
+  }
+  .container .right .flex-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=styles.css.map */

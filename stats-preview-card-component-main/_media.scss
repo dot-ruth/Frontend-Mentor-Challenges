@@ -19,8 +19,18 @@
           }
         }
         .right{
-           
            margin: 1rem 1rem 2rem 1rem;
+           .title{
+            text-align: center;
+           }
+           .detail{
+            text-align: center;
+           }
+           .flex-container{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+           }
         }
     }
 }
