@@ -40,3 +40,9 @@ background-color: hsl(179, 100%, 13%);
   border: 1px solid hsla(0, 0%, 100%, 0.75);
   background-color: hsla(0, 0%, 100%, 0.75);
 }
+@media screen and (max-width:600px){
+   .container{
+    flex-direction: column;
+    width: 18rem;
+   }
+}
