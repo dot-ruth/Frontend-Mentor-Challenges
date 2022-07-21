@@ -69,4 +69,13 @@ header .header-thin {
 .flex-con #cal {
   border-radius: 10px;
   box-shadow: 0rem -0.5rem hsl(180deg, 62%, 55%);
+}
+
+@media screen and (max-width: 600px) {
+  .flex-con {
+    flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }/*# sourceMappingURL=styles.css.map */

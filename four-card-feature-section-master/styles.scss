@@ -68,3 +68,11 @@ box-shadow: 0rem -.5rem  hsl(0, 78%, 62%);
         box-shadow: 0rem -.5rem  hsl(180, 62%, 55%); 
     }
 }
+@media screen and (max-width:600px) {
+    .flex-con{
+        flex-direction: column;
+       
+        height: fit-content;
+       
+    }
+}
